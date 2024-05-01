@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+}
+
+/* General Start */
+
+.one-line-title {
+  font-size: 13px;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  /* You may adjust the width to your layout needs */
+  max-width: 100%;
+  /* You may adjust the max-width to your layout needs */
+}
+
+.tow-line-title {
+  margin-bottom: 2px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  max-width: 100%;
+}
+
+/* General End */
+
+/* Top bar start */
+/* --------------------------------- */
+.logo h1 {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 65px;
+  margin: 0;
+  height: 65px;
+}
+.logo h6 {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 25px;
+  letter-spacing: 1.2px;
+}
+
+.topbar {
+  margin-top: 4px;
+}
+
+.topbar h6 {
+  font-family: "PT Serif";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.subscribe h6 {
+  padding: 7px 15px;
+  border-radius: 2px;
+  background-color: #ec3535;
+  color: white;
+}
+
+/* Top bar end */
+/* --------------------------------- */
+.line {
+  width: 100%;
+  height: 1.2px;
+  background-color: #d3d2d3;
+}
+
+/*categories start */
+/* --------------------------------- */
+
+.categories {
+  overflow: auto; /* Enable horizontal scrolling for small devices */
+  white-space: nowrap; /* Prevent line breaks for category items */
+  /* Hide the scroll bar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10 and 11 */
+}
+
+.categories a {
+  text-decoration: none;
+  color: black;
+}
+
+.categories a:hover {
+  color: #ec3535;
+}
+
+.categories .category-item {
+  height: 30px;
+  padding: 10px 13px;
+  font-family: "Heebo";
+  font-weight: 500;
+  font-size: 14.4px;
+}
+
+#special {
+  height: 38px;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  background-color: #ec3535 !important;
+  color: white;
+}
+
+/*categories end */
+/* --------------------------------- */
+
+/* Top News Start */
+/* --------------------------------- */
+
+.top-news-navigation {
+  padding: 15px 20px;
+}
+
+.nav-news-card {
+  width: 100px;
+  padding: 10px 10px;
+  flex: 0 0 300px;
+  /* Display 4 slides at a time */
+  /* Add styling for each slide */
+}
+
+.top-news-navigation .nav-news-card h4 {
+  font-size: 14.4px;
+  margin-bottom: 2px !important;
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  max-width: 100%;
+  /* You may adjust the max-width to your layout needs */
+}
+
+.top-news-navigation .nav-news-card p {
+  font-size: 13px;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  /* You may adjust the width to your layout needs */
+  max-width: 100%;
+  /* You may adjust the max-width to your layout needs */
+}
+
+.top-news-navigation {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  /* Adjust the transition duration */
+  cursor: grab;
+  user-select: none;
+}
+
+/* Top News End */
+/* --------------------------------- */
+
+/* Main Page Start */
+/* --------------------------------- */
+
+.main-page .fresh-stories {
+}
+
+.main-page .fresh-stories h1 {
+  font-size: 24px;
+  margin-bottom: 1px;
+  font-family: "Heebo";
+}
+
+.main-page .fresh-stories h4 {
+  font-size: 13px;
+  font-family: "Heebo";
+}
+
+.fresh-story-card h1 {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+
+  margin-bottom: 3px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  max-width: 100%;
+}
+
+.news-category-label {
+  border-radius: 2px;
+  font-size: 10px;
+  color: #ec3535;
+  margin-right: 6px;
+}
+
+.date-label {
+  border-radius: 2px;
+  font-size: 10px;
+}
+
+/* Main Page End */
+/* --------------------------------- */
+
+/* Extra Small Devices (max-width: 576px) */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 !important;
+  }
+  .search-bar,
+  .subscribe {
+    display: none;
+  }
+
+  .topbar {
+    justify-content: center !important;
+  }
+
+  .logo h1 {
+    font-size: 35px;
+    margin: 0;
+    height: 35px;
+  }
+  .logo h6 {
+    font-size: 8px;
+    letter-spacing: 0.4px;
+  }
+}
+
+/* Small Devices (min-width: 576px) */
+@media screen and (min-width: 600px) {
+  .search-bar,
+  .subscribe {
+    display: none;
+  }
+
+  .topbar {
+    justify-content: center !important;
+  }
+
+  .logo h1 {
+    font-size: 45px;
+    margin: 0;
+    height: 45px;
+  }
+  .logo h6 {
+    font-size: 9.2px;
+  }
+}
+
+/* Medium Devices (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  .logo h1 {
+    font-size: 65px;
+    margin: 0;
+    height: 65px;
+  }
+  .logo h6 {
+    font-size: 14.5px;
+  }
+}
+
+/* Large Devices (min-width: 992px) */
+@media screen and (min-width: 992px) {
+  /* Define styles for large devices if needed */
+}
+
+/* Extra Large Devices (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+  /* Define styles for extra-large devices if needed */
+}

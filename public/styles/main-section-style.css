@@ -1,0 +1,50 @@
+/* On desktop, default order 1, 2, 3, 4 */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.col {
+  flex: 1;
+}
+
+/* On tablet, change order to have 2, 3 in one row and 1, 4 in another row */
+@media screen and (max-width: 869px) {
+  .row {
+    grid-template-areas:
+      "col2 col3"
+      "col1 col4";
+  }
+
+  .col:nth-child(1) {
+    grid-area: col1;
+  }
+
+  .col:nth-child(2) {
+    grid-area: col2;
+  }
+
+  .col:nth-child(3) {
+    grid-area: col3;
+  }
+
+  .col:nth-child(4) {
+    grid-area: col4;
+  }
+}
+
+/* On mobile, make all columns col-12 */
+@media screen and (max-width: 576px) {
+  .row {
+    grid-template-areas:
+      "col2"
+      "col3"
+      "col1"
+      "col4";
+    grid-template-columns: 1fr;
+  }
+
+  .col {
+    flex: 1;
+  }
+}
